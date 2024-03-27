@@ -1,0 +1,297 @@
+/* ------------------------------------------------------------ *\
+  Container Loading
+\* ------------------------------------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Merriweather&family=Space+Mono&display=swap");
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 992px) {
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1440px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1400px;
+  }
+}
+body {
+  color: #000;
+  font-weight: normal;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+/*----------default styles----------*/
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 1.05px;
+  cursor: pointer;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+/* defaults */
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  max-width: 100%;
+}
+
+.underline,
+a.underline {
+  text-decoration: underline;
+}
+
+/* default heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: medium;
+  padding: 0;
+  margin: 0 0 15px 0;
+  color: #000;
+  text-rendering: optimizeLegibility;
+  line-height: 95%;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--Black, #002D22);
+}
+
+h1,
+.h1 {
+  font-size: 128px;
+  line-height: 122px;
+}
+
+h2,
+.h2 {
+  font-size: 72px;
+  line-height: 86px;
+}
+
+h3,
+.h3 {
+  font-size: 48px;
+  line-height: 50px;
+}
+
+h4,
+.h4 {
+  font-size: 30px;
+  line-height: 39px;
+}
+
+h5,
+.h5 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h6,
+.h6 {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+h1 a,
+h1 a:link,
+h1 a:visited,
+h1 a:hover,
+h1 a:focus,
+h2 a,
+h2 a:link,
+h2 a:visited,
+h2 a:hover,
+h2 a:focus,
+h3 a,
+h3 a:link,
+h3 a:visited,
+h3 a:hover,
+h3 a:focus,
+h4 a,
+h4 a:link,
+h4 a:visited,
+h4 a:hover,
+h4 a:focus,
+h5 a,
+h5 a:link,
+h5 a:visited,
+h5 a:hover,
+h5 a:focus,
+h6 a,
+h6 a:link,
+h6 a:visited,
+h6 a:hover,
+h6 a:focus {
+  color: inherit;
+  text-decoration: none;
+  border: none;
+}
+
+/* section spacing */
+section,
+header,
+footer {
+  padding: 0;
+}
+
+/*-----colours-----*/
+.primary {
+  color: var(--Black, #002D22);
+}
+
+/*----------------------------------------
+/ responsive design
+----------------------------------------*/
+@media (min-width: 0) and (max-width: 991px) {
+  h1,
+  .h1 {
+    font-size: 44px;
+    line-height: 40px;
+  }
+  h2,
+  .h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  h3,
+  .h3 {
+    font-size: 30px;
+    line-height: 31px;
+  }
+  h4,
+  .h4 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  h5,
+  .h5 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  h6,
+  .h6 {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  /* section spacing */
+  section {
+    padding: 40px 0;
+  }
+  .btn-primary {
+    padding: 5px 10px 5px 10px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-fluid {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+.discount {
+  background-color: #f6dcc9;
+  color: #dd6030;
+  animation: scrolling-type-2 10s infinite linear;
+}
+
+.sidebar {
+  width: 15vw;
+  background-image: linear-gradient(#1258da, #013596);
+}
+
+.item {
+  color: white;
+  font-size: 20px;
+}
+
+.item:hover {
+  background-color: #3771dd;
+  border-radius: 10px;
+}
+
+.menu-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.aside-bottom {
+  background-color: #e6effe;
+}
+
+.text-span {
+  color: #2b5de7;
+  font-size: 18px;
+}
+.text-span span {
+  color: #5361f6;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,35 @@
+.discount{
+    background-color: #f6dcc9;
+    color: #dd6030;
+        animation: scrolling-type-2 10s infinite linear;
+      }
+      .sidebar {
+        width: 15vw;
+        background-image: linear-gradient(#1258da, #013596);
+      }
+      
+      .item {
+        color: white;
+        font-size: 20px;
+      }
+      .item:hover{
+            background-color: #3771dd;
+            border-radius: 10px;
+        }
+
+ .menu-icon{
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+    margin-right: 10px;
+ }
+ .aside-bottom{
+    background-color: #e6effe;
+ }
+ .text-span{
+    color: #2b5de7;
+    font-size: 18px;
+    span{
+        color: #5361f6;
+    }
+ }
